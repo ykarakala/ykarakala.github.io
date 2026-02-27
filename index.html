@@ -10,8 +10,11 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <ul>
-            <li class="nav-logo"><a href="#home">YR</a></li>
+        <div class="nav-bar">
+            <span class="nav-logo"><a href="#home">YR</a></span>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
+        <ul id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#launches">Launches</a></li>
@@ -381,6 +384,21 @@
     </footer>
 
     <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.textContent = '☰';
+            });
+        });
+
         // Theme toggle
         const toggle = document.getElementById('themeToggle');
         const root = document.documentElement;
