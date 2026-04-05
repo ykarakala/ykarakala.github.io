@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+img, video, iframe {
+    max-width: 100%;
+}
+
 :root {
     --primary: #1a8a7a;
     --primary-dark: #0d6b58;
@@ -1101,6 +1109,13 @@ footer .social-links a:hover {
     .card h3 { font-size: 1.15rem; }
     .project-meta { flex-direction: column; gap: 0.4rem; }
 
+    /* Timeline */
+    .timeline { padding-left: 2rem; }
+    .timeline-item { padding: 1.5rem; }
+    .timeline-item::before { left: -2.5rem; width: 12px; height: 12px; }
+    .timeline-item h4 { font-size: 1.1rem; }
+    .timeline-item:hover { transform: none; }
+
     /* Footer */
     footer { padding: 2rem 4%; }
 }
@@ -1138,6 +1153,13 @@ footer .social-links a:hover {
     .card { padding: 1.2rem; }
     .card li { font-size: 0.85rem; line-height: 1.6; }
 
+    /* Timeline */
+    .timeline { padding-left: 1.5rem; margin-top: 2rem; }
+    .timeline-item { padding: 1rem; }
+    .timeline-item::before { left: -2rem; width: 10px; height: 10px; }
+    .timeline-item h4 { font-size: 1rem; }
+    .timeline-item .lab-meta { font-size: 0.8rem; }
+
     /* Contact */
     .contact-card { padding: 1rem; }
     .contact-icon { font-size: 2rem; }
@@ -1147,4 +1169,7 @@ footer .social-links a:hover {
     /* Tags */
     .tech-tag, .skill-item { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
     .tech-tags { gap: 0.35rem; }
+
+    /* Iframes */
+    iframe { max-width: 100%; }
 }
