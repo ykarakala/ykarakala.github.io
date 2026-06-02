@@ -183,6 +183,64 @@ This document captures the full history of prompts and decisions used to build Y
 
 ---
 
+## Phase 11: Four New Deliverables (May 2026)
+
+### Aurora MySQL 8.4 GA
+- Added Featured Launch card with blog link: https://aws.amazon.com/blogs/database/amazon-aurora-mysql-8-4-is-now-generally-available/
+- Key facts: GA May 21, 2026; first community MySQL LTS-aligned major version; closes 5-year version currency gap (8.0 equiv shipped 2021); 6+ months, cross-geo (Bangalore, Berlin, Toronto, Seattle, San Jose); multi-billion dollar revenue enabler; simplified versioning model; TLS enforced by default; caching_sha2_password default; automated upgrade prechecks; Blue/Green deployment support; AWS DMS certified
+- Added experience bullet: "Force-multiplied Aurora MySQL 8.4 GA..."
+- Updated About paragraph 3 to reference 8.4 GA
+
+### Agentic AI OpEx Dashboard
+- Added Featured Launch card (secondary accent border)
+- Internal platform: aurora-ticket-analytics.beta.harmony.a2z.com (not linked — internal)
+- Key facts: started as Aurora MySQL BI, morphed into RDS-wide OpEx platform; marries ticketing + bug-tracking + fleet data; AI-generated executive summaries; previously consumed ~10% of all RDS team bandwidth; adopted by 60+ teams within weeks; saved thousands of engineering hours
+- Added experience bullet
+- Added "60+ Teams Adopted OpEx Platform" metric tile
+
+### LTTR / CIT Customer Intelligence Platform
+- Added Featured Launch card (secondary accent border)
+- Two internal tools: prod.amsopstoolingui.rds.aws.dev/cit + groot-cit-analytics.harmony.a2z.com (not linked — internal)
+- Key facts: daily tracking of customer issues + availability incidents + auto-cut tickets; LTTR insights; 30 min/ticket triage overhead eliminated; builder contribution analytics layer added
+- Added experience bullet
+
+### Agentic AI Oncall Scheduler
+- Added Featured Launch card (secondary accent border)
+- Internal tool: prod.amsopstoolingui.rds.aws.dev/cit/schedule (not linked — internal)
+- Key facts: Greedy algorithm; follow-the-sun; PTO/LOA awareness; self-service swap model; primary/secondary/TE tier balancing; bi-weekly auto-generated schedules; SDM-permissioned swaps; oncall.amazon.com integration; Python service with hypothesis property-based tests; replaced weeks-long SDM coordination
+- Added experience bullet
+
+### Other changes in this phase
+- Updated About paragraph 3 to reference all four deliverables under Agentic AI-First umbrella
+- Added "MySQL Version Currency" to Database & Data skills
+- Added "Greedy Algorithms" to Engineering & Operations skills
+
+---
+
+## Phase 10: Kiro Powers / Agentic AI-First Launch (May 2026)
+
+**Prompt:** Add Aurora MySQL + Kiro Powers launch card using content from:
+- https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-aurora-mysql-kiro-powers/
+- https://aws.amazon.com/blogs/database/guide-your-amazon-aurora-mysql-migration-with-kiro-powers/
+
+**Changes made:**
+- Added new Featured Launch card: "Aurora MySQL + Kiro Powers — Agentic AI-First Database Development (2026)" with accent border, full description, tech tags, three links (What's New, Blog Post, MCP Docs), and a video placeholder pointing to the blog post demo
+- Added new AWS experience bullet: Kiro Powers integration — natural language DB ops + guided RDS → Aurora MySQL migrations
+- Updated About paragraph 3 to reference "Agentic AI-First" approach and Kiro Powers delivery
+- Added "Agentic AI (MCP)" skill tag to Engineering & Operations skill category
+- Updated context.md
+
+**Key content from sources:**
+- Announced May 27, 2026
+- Bundles MCP server (data plane + control plane ops) + steering files with Aurora MySQL best practices + validation hooks
+- Migration flow: Assess → Migrate (read replica) → Promote → Switch — near-zero downtime in tens of seconds
+- Available one-click from Kiro IDE and Kiro webpage, all AWS Regions where Aurora MySQL is available
+- Blog post includes embedded demo video — AWS CloudFront MP4, embedded via HTML5 `<video>` tag
+- Video URL: https://d2908q01vomqb2.cloudfront.net/artifacts/DBSBlogs/DBBLOG-5632/power-edit.mp4?_=1
+- MCP server docs: https://awslabs.github.io/mcp/servers/mysql-mcp-server
+
+---
+
 ## Phase 9: Cleanup
 
 **Prompt:** Remove unnecessary files from workspace.
