@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# Archives / local cruft
+*.zip
+
+# Editor
+.vscode/
+
+# Private / interview prep — not for public site
+Director_Interview_QA.pdf
+KYR_Director_Interview_Guide.html
+L7SDM_Interview_QA*
+Deliver Results — Cheat Sheet v2.html
+Deliver Results — Full Prep Guide v2.html
