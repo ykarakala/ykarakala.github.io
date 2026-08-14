@@ -403,7 +403,7 @@ background: linear-gradient(135deg, #0b3d2e 0%, #0d6b58 30%, #1a8a7a 50%, #2d6b8
 ## Profile Information
 
 - **Name:** Yugandhar Reddy
-- **Current Role:** Engineering Leader, Aurora MySQL — Amazon Web Services (AWS)
+- **Current Role:** Head of Engineering, Aurora MySQL — Amazon Web Services (AWS)
 - **Location:** San Francisco Bay Area / Palo Alto, CA
 - **Start at AWS:** Dec 2021
 - **Prior:** 21 years at NetApp (Sr. Director HCI/SRE Engineering, Director CPE, multiple positions)

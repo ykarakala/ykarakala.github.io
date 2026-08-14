@@ -1,6 +1,6 @@
 # Yugandhar Reddy — Portfolio Website
 
-Personal portfolio website for Yugandhar Reddy, Engineering Leader at AWS Aurora MySQL.
+Personal portfolio website for Yugandhar Reddy, Head of Engineering at AWS Aurora MySQL.
 
 ## Live Site
 
